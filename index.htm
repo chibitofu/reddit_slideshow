@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="text/css">
+		#slideShow {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+<section class="container">
+	<section class="row">
+		<header class="col-md-8 col-md-offset-2">
+			<h1>Reddit Slideshow Viewer</h1>
+			<p>Start a reddit slideshow with a simple search</p>
+		</header>
+	</section>
+	<section class="row">
+		<form id="searchForm">
+			<div class="col-md-4 col-md-offset-2">
+					<input type="text" id="searchTerm" class="form-control" name="searchTerm" placeholder="Search Reddit">
+			</div>
+			<div class="col-md-4 text-right">
+				<button type="submit" class="btn btn-primary">Search</button>
+				<button type="button" id="stopSlideshow" class="btn btn-danger">Stop Slideshow</button>
+			</div>
+		</form>
+	</section>
+	<section class="row">
+		<div id="slideShow" class="col-md-8 col-md-offset-2 text-center"></div>
+	</section>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// Function calls go here
+		SlideShow.init();
+	});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
